@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div id="outer-contaner"
+        class="h-screen flex flex-col gap-y-8 items-center justify-center transform -translate-y-50">
+        <p class="font-sans text-xl tracking-wide">Find a Contact</p>
+        <div id="search-container" class="flex flex-row justify-center space-x-5">
+            <input class="border-1 rounded-lg border-gray-400 w-80 pl-4" type="text" id="query"
+                placeholder="Enter name, phone, or location">
+            <button
+                class="bg-gray-800 py-1 cursor-pointer rounded hover:bg-gray-700 shadow-white/10 text-sm/6 font-semibold shadow-inner text-white w-17"
+                id="searchButton">Search</button>
+        </div>
+        <div id="contacts" class="max-h-80 overflow-y-auto">
+            <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
+                <li class="pb-3 sm:pb-4">
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            Neil Sims
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            email@flowbite.com
+                    </div>
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        $320
+                     </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
