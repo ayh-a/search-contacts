@@ -27,6 +27,11 @@ function processData(contacts) {
     let container = document.getElementById('contacts');
     container.innerHTML = "";
 
+    if(contacts.length == 0) {
+        container.innerHTML = "No contacts found";
+        return;
+    }
+
     contacts.forEach(contact => {
         let fullName = contact.fullName;
         let phone = contact.phoneNum;
