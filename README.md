@@ -27,7 +27,8 @@ npm run dev
 * http://localhost:5500
 
 ## **Backend Setup**
-* Note: use mvnw instead of mvn if using maven wrapper
+* Note: use `mvnw` instead of mvn if using maven wrapper
+
 **Navigate to backend directory**:
 ```
 cd Assignment1
